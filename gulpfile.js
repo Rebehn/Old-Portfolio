@@ -5,6 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 const flatten = require('gulp-flatten');
 const plumber = require('gulp-plumber');
 const babel = require('gulp-babel');
+const minify = require('gulp-minify');
 
 const src  = 'src';
 const dist = 'public';
@@ -15,8 +16,13 @@ gulp.task('es6', () => {
   .pipe(babel({
     presets: ['es2015']
   }))
-  .pipe(gulp.dest('public'))
-  .pipe(livereload());
+  .pipe(minify({
+    ext: {
+      src: '-debug.js',
+      min: '.js'
+    }
+  }))
+  .pipe(gulp.dest('public'));
 });
 
 gulp.task('sass', () => {
