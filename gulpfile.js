@@ -4,9 +4,20 @@ const livereload = require('gulp-livereload');
 const cleanCSS = require('gulp-clean-css');
 const flatten = require('gulp-flatten');
 const plumber = require('gulp-plumber');
+const babel = require('gulp-babel');
 
 const src  = 'src';
 const dist = 'public';
+
+gulp.task('es6', () => {
+  return gulp.src('src/**/*.js')
+  .pipe(plumber())
+  .pipe(babel({
+    presets: ['es2015']
+  }))
+  .pipe(gulp.dest('public'))
+  .pipe(livereload());
+});
 
 gulp.task('sass', () => {
   return gulp.src(`${src}/**/*.scss`)
@@ -24,6 +35,6 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', [
-  // 'es6',
+  'es6',
   'watch'
 ]);
