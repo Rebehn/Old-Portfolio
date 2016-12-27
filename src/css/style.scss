@@ -1,10 +1,12 @@
+@import "reset";
+
 body {
   background-color: lightgrey;
 }
 
 li {
   display: inline-block;
-  padding: 14px 18px;
+  padding: 14px 16px;
 }
 
 li:hover {
