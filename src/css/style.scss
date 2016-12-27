@@ -1,20 +1,19 @@
 @import "reset";
 
 body {
-  background-color: lightgrey;
-}
-
-li {
-  display: inline-block;
-  padding: 14px 16px;
-}
-
-li:hover {
-  border-bottom: 2px solid #003153;
-  padding-bottom: 12px;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
+  background-color: lightblue;
+  nav {
+    li {
+      display: inline-block;
+      padding: 14px 16px;
+      &:hover {
+        border-bottom: 2px solid #003153;
+        padding-bottom: 12px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 }
