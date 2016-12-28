@@ -2,14 +2,22 @@
 
 body {
   background-color: lightblue;
+  font-family: 'Ubuntu', sans-serif;
+  width: 80vw;
+  margin: 0 auto;
   nav {
-    background-color: darken(lightblue, 10%);
+    font-size: 22px;
+    font-weight: 200;
     li {
       display: inline-block;
-      padding: 14px 16px;
+      padding: 14px 8px;
+      margin: 0 8px;
       &:hover {
         border-bottom: 2px solid #003153;
-        padding-bottom: 12px;
+        padding-bottom: 14px;
+        a {
+          color: #003153;
+        }
       }
       a {
         color: white;
