@@ -7,9 +7,9 @@ body {
   background-color: lightblue;
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
+  position: relative;
   nav {
     font-size: 22px;
-    font-weight: 200;
     li {
       display: inline-block;
       padding: 14px 8px;
@@ -30,6 +30,14 @@ body {
   .bg1 {
     height: 100%;
     background-image: url('http://i.cdn.turner.com/nba/nba/dam/assets/160215001056-russell-westbrook-2016-nba-all-star-game.1200x672.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg2 {
+    height: 100%;
+    background-image: url('http://basket.de/wp-content/uploads/2015/02/Giannis-Antetokounmpo1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
