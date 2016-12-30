@@ -1,3 +1,11 @@
 'use strict';
 
-console.log('hello world');
+$(document).ready(function () {
+  console.log('ready!');
+
+  $('#slideshow > div:gt(0)').hide();
+
+  setInterval(function () {
+    $('#slideshow > div:first').fadeOut(500).next().fadeIn(500).end().appendTo('#slideshow');
+  }, 1000);
+});

@@ -9,6 +9,7 @@ body {
   nav {
     font-size: 22px;
     width: 100%;
+    background-color: black;
     position: fixed;
     top: 0;
     ul li {
@@ -30,7 +31,7 @@ body {
   }
   .bg1 {
     height: 100%;
-    background-image: url('http://i.cdn.turner.com/nba/nba/dam/assets/160215001056-russell-westbrook-2016-nba-all-star-game.1200x672.jpeg');
+    background-image: url('http://static.zoonar.com/img/www_repository3/0c/6f/f2/10_a779ec9bc4edd6f9b2e89f6ab4156d18.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,10 +58,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .portfolio {
-    text-align: center;
+  #portfolio {
     background-color: lightblue;
-    font-size: 36px;
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    img {
+      display: block;
+    }
   }
   footer {
     font-size: 22px;
@@ -85,4 +91,21 @@ body {
       }
     }
   }
+}
+
+
+#slideshow {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  height: 240px;
+  padding: 10px;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
