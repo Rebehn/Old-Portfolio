@@ -9,8 +9,8 @@ body {
     font-size: 22px;
     z-index: 1;
     ul {
-      border-left: 10px solid #AE0000;
-      margin: 0 0 0 calc(94vw - 10px);
+      border-left: 7px solid #AE0000;
+      margin: 0 0 0 calc(94vw - 7px);
       padding: 0;
       background-color: black;
       height: 100%;
@@ -43,7 +43,7 @@ body {
   }
   .bg1 {
     height: 100%;
-    width: calc(94vw - 10px);
+    width: calc(94vw - 7px);
     background-image: url('http://static.zoonar.com/img/www_repository3/0c/6f/f2/10_a779ec9bc4edd6f9b2e89f6ab4156d18.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -61,19 +61,10 @@ body {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-      }
     }
-  .bg2 {
-    height: 100%;
-    width: calc(94vw - 10px);
-    background-image: url('http://basket.de/wp-content/uploads/2015/02/Giannis-Antetokounmpo1.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   #portfolio {
-    width: calc(94vw - 10px);
+    width: calc(94vw - 7px);
     .projectBox {
       width: 48%;
       font-size: 0;
@@ -87,6 +78,9 @@ body {
       img {
         width: 100%;
         border-radius: 4px;
+        &:hover {
+          opacity: 0.3;
+        }
       }
     }
   }
