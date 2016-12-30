@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){console.log("ready!"),$("#slideshow > div:gt(0)").hide(),setInterval(function(){$("#slideshow > div:first").fadeOut(500).next().fadeIn(500).end().appendTo("#slideshow")},1e3)});
+"use strict";$(document).ready(function(){console.log("Hi")});

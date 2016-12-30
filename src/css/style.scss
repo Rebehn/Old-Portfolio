@@ -5,35 +5,44 @@ html { height: 100%; }
 body {
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
-  // position: relative;
   nav {
     font-size: 22px;
     ul {
       border-left: 2px solid #AE0000;
-      margin: 0 0 0 95%;
+      margin: 0 0 0 94%;
       padding: 0;
       background-color: black;
       height: 100%;
       position: fixed;
-      width: 5%;
+      width: 6%;
       li {
-        padding: 14px 8px;
-        margin: 0 8px;
+        padding: 14px 1%;
+        text-align: center;
         &:hover {
           a {
-            display: block;
             color: #AE0000;
+            font-size: 12px;
+            .navLinkText {
+              display: unset;
+            }
+            .fa {
+              display: none;
+            }
           }
         }
         a {
           color: white;
           text-decoration: none;
+          .navLinkText {
+            display: none;
+          }
         }
       }
     }
   }
   .bg1 {
     height: 100%;
+    width: 94%;
     background-image: url('http://static.zoonar.com/img/www_repository3/0c/6f/f2/10_a779ec9bc4edd6f9b2e89f6ab4156d18.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -55,6 +64,7 @@ body {
     }
   .bg2 {
     height: 100%;
+    width: 94%;
     background-image: url('http://basket.de/wp-content/uploads/2015/02/Giannis-Antetokounmpo1.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -62,30 +72,16 @@ body {
     background-size: cover;
   }
   #portfolio {
-    background-color: lightblue;
-    h2 {
-      font-size: 36px;
-      text-align: center;
-    }
-    img {
-      display: block;
+    width: 94%;
+    .projectBox {
+      width: 50%;
+      font-size: 0;
+      h3 {
+        font-size: 30px;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
-}
-
-
-#slideshow {
-  position: relative;
-  margin: auto;
-  width: 90%;
-  height: 240px;
-  padding: 10px;
-}
-
-#slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
 }
