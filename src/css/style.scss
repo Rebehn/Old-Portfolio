@@ -5,50 +5,77 @@ html { height: 100%; }
 body {
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
-  nav {
-    font-size: 22px;
+  .navbar {
+    font-size: 26px;
     z-index: 1;
-    ul {
-      border-right: 7px solid #AE0000;
-      margin: 0;
-      padding: 0;
-      background-color: black;
-      height: 100%;
-      position: fixed;
-      width: 6%;
-      li {
-        padding: 14px 1%;
-        text-align: center;
-        a {
-          color: white;
-          text-decoration: none;
+    border-right: 3px solid #AE0000;
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 6%;
+    nav {
+      text-align: center;
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 0;
+        .navLinkText {
+          display: none;
+        }
+        &:hover {
+          color: #AE0000;
+          font-size: 12px;
+          line-height: 26px;
           .navLinkText {
+            display: unset;
+          }
+          .fa {
             display: none;
           }
+        }
+      }
+    }
+    ul {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      li {
+        text-align: center;
+        a {
+          padding: 14px 0;
+          display: block;
+          color: white;
+          text-decoration: none;
           &:hover {
             color: #AE0000;
-            font-size: 12px;
-            .navLinkText {
-              display: unset;
-            }
-            .fa {
-              display: none;
-            }
+          }
+        }
+        &:last-child {
+          a {
+            padding-bottom: 200px;
           }
         }
       }
     }
   }
   #particles {
-    width: calc(94vw - 7px);
-    margin-left: calc(6vw + 7px);
+    width: calc(94vw - 3px);
+    margin-left: calc(6vw + 3px);
     height: 100%;
     overflow: hidden;
     background-color: black;
+    h1 {
+      color: white;
+      font-size: 50px;
+      position: absolute;
+      top: 30vh;
+      right: 50vw;
+    }
   }
   #portfolio {
-    width: calc(94vw - 7px);
-    margin-left: calc(6vw + 7px);
+    width: calc(94vw - 3px);
+    margin-left: calc(6vw + 3px);
     .projectBox {
       width: 48%;
       font-size: 0;
