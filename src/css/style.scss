@@ -9,8 +9,8 @@ body {
     font-size: 22px;
     z-index: 1;
     ul {
-      border-left: 7px solid #AE0000;
-      margin: 0 0 0 calc(94vw - 7px);
+      border-right: 7px solid #AE0000;
+      margin: 0;
       padding: 0;
       background-color: black;
       height: 100%;
@@ -19,8 +19,13 @@ body {
       li {
         padding: 14px 1%;
         text-align: center;
-        &:hover {
-          a {
+        a {
+          color: white;
+          text-decoration: none;
+          .navLinkText {
+            display: none;
+          }
+          &:hover {
             color: #AE0000;
             font-size: 12px;
             .navLinkText {
@@ -31,40 +36,12 @@ body {
             }
           }
         }
-        a {
-          color: white;
-          text-decoration: none;
-          .navLinkText {
-            display: none;
-          }
-        }
       }
-    }
-  }
-  .bg1 {
-    height: 100%;
-    width: calc(94vw - 7px);
-    background-image: url('http://static.zoonar.com/img/www_repository3/0c/6f/f2/10_a779ec9bc4edd6f9b2e89f6ab4156d18.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    h1 {
-      font-size: 100px;
-      text-align: center;
-      padding-top: 25%;
-      -webkit-text-stroke: 1px black;
-      color: white;
-      text-shadow:
-        3px 3px 0 #000,
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
     }
   }
   #portfolio {
     width: calc(94vw - 7px);
+    margin-left: calc(6vw + 7px);
     .projectBox {
       width: 48%;
       font-size: 0;
@@ -84,4 +61,15 @@ body {
       }
     }
   }
+}
+
+#particles-js {
+  height: 100%;
+  width: calc(94vw - 7px);
+  margin-left: calc(6vw + 7px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lighten(black, 30%);
 }
