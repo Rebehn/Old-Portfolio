@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){$("#particles").particleground({dotColor:"#5cbdaa",lineColor:"#5cbdaa"})});
+"use strict";$(document).ready(function(){$("#particles").particleground({dotColor:"white",lineColor:"white",lineWidth:.5,proximity:100,maxSpeedX:.2,maxSpeedY:.2})});
