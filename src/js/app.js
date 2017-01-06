@@ -6,6 +6,5 @@ $(document).ready(function() {
     proximity: 100,
     maxSpeedX: 0.2,
     maxSpeedY: 0.2
-
   });
 });
