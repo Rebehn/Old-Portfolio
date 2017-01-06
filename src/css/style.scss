@@ -65,12 +65,20 @@ body {
     height: 100%;
     overflow: hidden;
     background-color: black;
-    h1 {
-      color: white;
-      font-size: 50px;
+    position: relative;
+    .content {
+      height: 50%;
+      width: 60%;
+      background-color: aquamarine;
       position: absolute;
-      top: 30vh;
-      right: 50vw;
+      top: 25%;
+      left: 20%;
+      border-radius: 20px;
+      #home {
+        font-size: 30vh;
+        text-align: center;
+        color: white;
+      }
     }
   }
   #portfolio {
