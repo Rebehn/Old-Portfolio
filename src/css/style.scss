@@ -3,6 +3,7 @@
 $navbar-width: 6vw;
 $navbar-trim-width: 3px;
 $main-width: calc(94vw - 3px);
+$main-margin: calc(6vw + 3px);
 
 html { height: 100%; }
 
@@ -88,32 +89,41 @@ body {
     }
   }
   #portfolio {
-    width: calc(94vw - 3px);
-    margin-left: calc(6vw + 3px);
-    height: 100%;
-    background-color: red;
-    .projectBox {
-      width: 48%;
-      font-size: 0;
-      float: left;
-      padding: 1%;
-      background-color: lightgrey;
+    width: $main-width;
+    margin-left: $main-margin;
+    background-color: orange;
+    padding-bottom: 20px;
+    h3 {
+      font-size: 40px;
       text-align: center;
-      h3 {
-        font-size: 30px;
-      }
+      margin-bottom: 40px;
+    }
+    .projectCard {
+      width: 20vw;
+      background-color: lightblue;
+      height: 15vw;
+      padding: 6px;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 0.5%;
+      font-size: 0;
       img {
         width: 100%;
-        border-radius: 4px;
-        &:hover {
-          opacity: 0.5;
-        }
+        border-radius: 6px;
       }
+      h4 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    #projectCardOne {
+      margin-left: 4%;
     }
   }
   #contact {
     width: $main-width;
-    margin-left: calc(6vw + 3px);
+    margin-left: $main-margin;
     background-color: purple;
     height: 40%;
     font-size: 0;
