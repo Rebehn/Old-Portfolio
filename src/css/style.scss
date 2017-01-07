@@ -100,10 +100,12 @@ body {
     margin-left: $main-margin;
     background-color: darken($cream, 10%);
     height: 55vh;
+    color: $darkgreen;
     h3 {
       font-size: 40px;
       text-align: center;
       margin-bottom: 40px;
+      padding-top: 40px;
     }
   }
   #portfolio {
@@ -111,12 +113,12 @@ body {
     margin-left: $main-margin;
     background-color: $cream;
     height: 45vh;
-    color: $darkgreen;
     h3 {
       font-size: 40px;
       text-align: center;
       margin-bottom: 40px;
       padding-top: 50px;
+      color: $darkgreen;
     }
     .projectCard {
       width: 20vw;
@@ -127,6 +129,7 @@ body {
       display: inline-block;
       margin: 0.5%;
       font-size: 0;
+      color: $cream;
       img {
         width: 100%;
         border-radius: 6px;
@@ -135,6 +138,9 @@ body {
         font-size: 20px;
         text-align: center;
         margin-top: 10px;
+      }
+      &:hover {
+        color: $darkgreen;
       }
     }
     #projectCardOne {
@@ -151,13 +157,13 @@ body {
     h3 {
       font-size: 40px;
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: calc(80px - 6%);
       padding-top: 60px;
       color: $darkgreen;
     }
     .formInputs {
       width: 46%;
-      padding: 2%;
+      padding: 1% 2% 2% 2%;
       input {
         background: none;
         border: none;
@@ -176,7 +182,7 @@ body {
     .formMessage {
       float: right;
       width: 46%;
-      padding: 2%;
+      padding: 1% 2% 2% 2%;
       textarea {
         background: none;
         padding: 0;

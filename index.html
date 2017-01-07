@@ -78,11 +78,12 @@
       <h3>Contact Me</h3>
       <form method="POST" action="http://formspree.io/apurjh@gmail.com">
         <div class="formMessage">
-          <textarea rows="5" name="message" placeholder="Your message"></textarea>
+          <textarea rows="5" name="message" placeholder="Your message" required></textarea>
         </div>
         <div class="formInputs">
-          <input type="text" name="name" placeholder="Your name">
-          <input type="email" name="email" placeholder="Your email">
+          <input type="text" name="name" placeholder="Your name *" required>
+          <input type="email" name="email" placeholder="Your email *" required>
+          <input type="tel" name="tel" placeholder="Your phone number">
         </div>
         <button type="submit">Send</button>
       </form>
