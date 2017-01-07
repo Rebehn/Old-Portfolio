@@ -5,6 +5,10 @@ $navbar-trim-width: 3px;
 $main-width: calc(94vw - 3px);
 $main-margin: calc(6vw + 3px);
 
+$darkgreen: #00471B;
+$cream: #EEE1C6;
+$blue: #0077C0;
+
 html { height: 100%; }
 
 input:focus, select:focus, textarea:focus, button:focus { outline: none; }
@@ -15,23 +19,23 @@ body {
   .navbar {
     font-size: 26px;
     z-index: 1;
-    border-right: $navbar-trim-width solid #AE0000;
+    border-right: $navbar-trim-width solid darken($cream, 45%);
     position: fixed;
-    background-color: black;
+    background-color: $darkgreen;
     height: 100%;
     width: $navbar-width;
     nav {
       text-align: center;
       a {
         display: block;
-        color: white;
+        color: darken($cream, 5%);
         text-decoration: none;
         padding: 14px 0;
         .navLinkText {
           display: none;
         }
         &:hover {
-          color: #AE0000;
+          color: darken($cream, 15%);
           font-size: 12px;
           line-height: 26px;
           .navLinkText {
@@ -42,6 +46,9 @@ body {
           }
         }
       }
+      &:first-child {
+        padding-top: 60px;
+      }
     }
     ul {
       position: absolute;
@@ -50,28 +57,28 @@ body {
       li {
         text-align: center;
         a {
-          padding: 14px 0;
+          padding: 8px 0;
           display: block;
-          color: white;
+          color: darken($cream, 5%);
           text-decoration: none;
           &:hover {
-            color: #AE0000;
+            color: darken($cream, 20%);
           }
         }
         &:last-child {
           a {
-            padding-bottom: 200px;
+            padding-bottom: 40px;
           }
         }
       }
     }
   }
   #particles {
-    width: calc(94vw - 3px);
-    margin-left: calc(6vw + 3px);
+    width: $main-width;
+    margin-left: $main-margin;
     height: 100%;
     overflow: hidden;
-    background-color: black;
+    background-color: $cream;
     position: relative;
     .content {
       height: 60%;
@@ -88,20 +95,33 @@ body {
       }
     }
   }
-  #portfolio {
+  #skills {
     width: $main-width;
     margin-left: $main-margin;
-    background-color: orange;
-    padding-bottom: 20px;
+    background-color: darken($cream, 10%);
+    height: 55vh;
     h3 {
       font-size: 40px;
       text-align: center;
       margin-bottom: 40px;
     }
+  }
+  #portfolio {
+    width: $main-width;
+    margin-left: $main-margin;
+    background-color: $cream;
+    height: 45vh;
+    color: $darkgreen;
+    h3 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+      padding-top: 50px;
+    }
     .projectCard {
       width: 20vw;
-      background-color: lightblue;
-      height: 15vw;
+      background-color: darken($cream, 10%);
+      height: 24vh;
       padding: 6px;
       border-radius: 8px;
       display: inline-block;
@@ -124,13 +144,16 @@ body {
   #contact {
     width: $main-width;
     margin-left: $main-margin;
-    background-color: purple;
-    height: 40%;
+    background-color: white;
+    height: 55vh;
     font-size: 0;
+    position: relative;
     h3 {
       font-size: 40px;
       text-align: center;
       margin-bottom: 40px;
+      padding-top: 60px;
+      color: $darkgreen;
     }
     .formInputs {
       width: 46%;
@@ -138,12 +161,16 @@ body {
       input {
         background: none;
         border: none;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid $cream;
         width: 100%;
         padding: 0;
         font-size: 20px;
         line-height: 35px;
         margin: 4% auto;
+        color: $darkgreen;
+        &::-webkit-input-placeholder {
+           color: $cream;
+        }
       }
     }
     .formMessage {
@@ -162,9 +189,13 @@ body {
     button {
       border: none;
       color: white;
-      font-size: 14px;
-      padding: 6px 140px;
-      border-radius: 3px;
+      font-size: 18px;
+      background-color: $darkgreen;
+      padding: 10px 8%;
+      border-radius: 8px;
+      position: absolute;
+      left: 40%;
+      bottom: 5%;
     }
   }
 }
