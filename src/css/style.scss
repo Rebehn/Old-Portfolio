@@ -210,7 +210,7 @@ body {
         font-size: 1.8vw;
         width: 95%;
         height: auto;
-        padding: 5px;
+        padding: 1vw;
         margin-top: 1.5vw;
         border-radius: 8px;
         border: 2px solid $cream;
@@ -224,12 +224,16 @@ body {
       border: none;
       color: white;
       font-size: 18px;
-      background-color: $darkgreen;
+      background: $darkgreen;
+      background: linear-gradient(lighten($darkgreen, 6%), $darkgreen);
       padding: 10px 8%;
       border-radius: 8px;
       position: absolute;
       left: 40%;
       bottom: 5%;
+      &:hover {
+        background: lighten($darkgreen, 6%);
+      }
     }
   }
 }
