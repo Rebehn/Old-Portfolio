@@ -80,19 +80,15 @@ body {
     overflow: hidden;
     background-color: $cream;
     position: relative;
-    .content {
-      height: 60%;
-      width: 70%;
-      background-color: aquamarine;
+    h1 {
+      font-size: 90px;
+      font-weight: bold;
+      color: $darkgreen;
+      background-color: $cream;
+      padding: 2%;
       position: absolute;
-      top: 20%;
-      left: 15%;
-      border-radius: 20px;
-      #home {
-        font-size: 20vw;
-        text-align: center;
-        color: white;
-      }
+      top: 35%;
+      left: 18%;
     }
   }
   #skills {
