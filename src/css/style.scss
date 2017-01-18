@@ -125,6 +125,13 @@ body {
     margin-left: $main-margin;
     background-color: $cream;
     height: 45vh;
+    a {
+      text-decoration: none;
+      color: $cream;
+      &:hover {
+        color: $darkgreen;
+      }
+    }
     h3 {
       font-size: 2.8vw;
       text-align: center;
@@ -154,7 +161,6 @@ body {
         margin-top: 10px;
       }
       &:hover {
-        color: $darkgreen;
         img {
           opacity: 1;
         }
