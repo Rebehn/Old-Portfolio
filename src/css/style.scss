@@ -82,11 +82,10 @@ body {
     position: relative;
     h1 {
       font-size: 90px;
-      font-weight: bold;
       color: $darkgreen;
-      background-color: $cream;
       padding: 2%;
       position: absolute;
+      -webkit-text-stroke: 1px $cream;
       top: 35%;
       left: 18%;
     }
