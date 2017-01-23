@@ -10,11 +10,23 @@ $(document).ready(function() {
     parallaxMultiplier: 8
   });
 
+  const $shadeBox = $('.shadeBox');
+  const $projectInfoBox = $('.projectInfoBox');
   const $projectCardOne = $('#projectCardOne');
 
   $projectCardOne.on('click', showProject);
+  $projectInfoBox.on('click', hideProject);
 
   function showProject() {
-    console.log('wew lad');
+    console.log('wew');
+    $shadeBox.show();
+    $projectInfoBox.show();
+
+  }
+
+  function hideProject() {
+    console.log('hiding');
+    $shadeBox.hide();
+    $projectInfoBox.hide();
   }
 });
