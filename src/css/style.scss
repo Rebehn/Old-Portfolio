@@ -237,4 +237,22 @@ body {
       }
     }
   }
+  .shadeBox {
+    background-color: black;
+    width: $main-width;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: $main-margin;
+    opacity: 0.92;
+  }
+  .projectInfoBox {
+    background-color: $darkgreen;
+    width: 84vw;
+    height: 90vh;
+    position: fixed;
+    border-radius: 40px;
+    top: 5vh;
+    left: 11vw;
+  }
 }
