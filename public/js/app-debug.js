@@ -11,4 +11,12 @@ $(document).ready(function () {
     maxSpeedY: 0.2,
     parallaxMultiplier: 8
   });
+
+  var $projectCardOne = $('#projectCardOne');
+
+  $projectCardOne.on('click', showProject);
+
+  function showProject() {
+    console.log('wew lad');
+  }
 });
