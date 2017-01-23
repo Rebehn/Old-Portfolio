@@ -14,10 +14,11 @@ $(document).ready(function () {
 
   var $shadeBox = $('.shadeBox');
   var $projectInfoBox = $('.projectInfoBox');
+  var $closeProjectButton = $('.closeProjectButton');
   var $projectCardOne = $('#projectCardOne');
 
   $projectCardOne.on('click', showProject);
-  $projectInfoBox.on('click', hideProject);
+  $closeProjectButton.on('click', hideProject);
 
   function showProject() {
     console.log('wew');

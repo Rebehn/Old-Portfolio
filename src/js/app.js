@@ -12,10 +12,11 @@ $(document).ready(function() {
 
   const $shadeBox = $('.shadeBox');
   const $projectInfoBox = $('.projectInfoBox');
+  const $closeProjectButton = $('.closeProjectButton');
   const $projectCardOne = $('#projectCardOne');
 
   $projectCardOne.on('click', showProject);
-  $projectInfoBox.on('click', hideProject);
+  $closeProjectButton.on('click', hideProject);
 
   function showProject() {
     console.log('wew');
