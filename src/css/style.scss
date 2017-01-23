@@ -247,16 +247,44 @@ body {
   }
   .projectInfoBox {
     background-color: $cream;
-    width: 84vw;
-    height: 90vh;
+    width: 70vw;
+    height: 80vh;
     position: fixed;
     top: 5vh;
     left: 11vw;
     border: 4px $darkgreen solid;
     border-radius: 40px;
-    a {
+    padding: 5vh 7vw;
+    h3 {
+      font-size: 50px;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    p {
+      font-size: 24px;
+    }
+    .projectButton {
+      background-color: darken($cream, 20%);
+      display: inline-block;
+      font-size: 24px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      position: absolute;
+      bottom: 8vh;
+      color: $cream;
+      &:hover {
+        color: $darkgreen;
+      }
+    }
+    #viewCodeButton {
+      right: 8vw;
+    }
+    #closeProjectButtonLink {
       color: $cream;
       text-decoration: none;
+      &:hover {
+        color: $darkgreen;
+      }
     }
     .closeProjectButton {
       width: 40px;
