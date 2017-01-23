@@ -126,10 +126,6 @@ body {
     height: 45vh;
     a {
       text-decoration: none;
-      color: $cream;
-      &:hover {
-        color: $darkgreen;
-      }
     }
     h3 {
       font-size: 4vh;
@@ -142,7 +138,7 @@ body {
     .projectCard {
       width: 20vw;
       background-color: darken($cream, 10%);
-      height: 24.5vh;
+      height: 14.4vw;
       padding: 6px;
       border-radius: 8px;
       display: inline-block;
@@ -162,6 +158,9 @@ body {
       &:hover {
         img {
           opacity: 1;
+        }
+        h4 {
+          color: $darkgreen;
         }
       }
     }
@@ -238,21 +237,22 @@ body {
     }
   }
   .shadeBox {
-    background-color: black;
+    background-color: white;
     width: $main-width;
     height: 100vh;
     position: fixed;
     top: 0;
     left: $main-margin;
-    opacity: 0.92;
+    opacity: 0.99;
   }
   .projectInfoBox {
-    background-color: $darkgreen;
+    background-color: $cream;
     width: 84vw;
     height: 90vh;
     position: fixed;
-    border-radius: 40px;
     top: 5vh;
     left: 11vw;
+    border: 4px $darkgreen solid;
+    border-radius: 40px;
   }
 }
