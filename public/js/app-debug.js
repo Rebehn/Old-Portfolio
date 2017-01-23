@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function () {
+$(function () {
   $('#particles').particleground({
     dotColor: '#00471B',
     lineColor: '#00471B',
@@ -16,18 +16,22 @@ $(document).ready(function () {
   var $projectInfoBox = $('.projectInfoBox');
   var $closeProjectButton = $('.closeProjectButton');
   var $projectCardOne = $('#projectCardOne');
+  var $projectCardTwo = $('#projectCardTwo');
+  var $projectCardThree = $('#projectCardThree');
+  var $projectCardFour = $('#projectCardFour');
 
   $projectCardOne.on('click', showProject);
+  $projectCardTwo.on('click', showProject);
+  $projectCardThree.on('click', showProject);
+  $projectCardFour.on('click', showProject);
   $closeProjectButton.on('click', hideProject);
 
   function showProject() {
-    console.log('wew');
     $shadeBox.show();
     $projectInfoBox.show();
   }
 
   function hideProject() {
-    console.log('hiding');
     $shadeBox.hide();
     $projectInfoBox.hide();
   }
