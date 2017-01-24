@@ -21,8 +21,8 @@ $(function () {
 
   $projectCardOne.on('click', showProjectOne);
   $projectCardTwo.on('click', showProjectTwo);
-  $projectCardThree.on('click', showProject);
-  $projectCardFour.on('click', showProject);
+  $projectCardThree.on('click', showProjectThree);
+  $projectCardFour.on('click', showProjectFour);
 
   function showProjectOne() {
     $shadeBox.show();
@@ -40,10 +40,18 @@ $(function () {
     $closeProjectButton.on('click', hideProject);
   }
 
-  function showProject() {
+  function showProjectThree() {
     $shadeBox.show();
     $projectInfoBox.show();
-    $projectInfoBox.html('<a href="#portfolio" id="closeProjectButtonLink"><div class="closeProjectButton">X</div></a>');
+    $projectInfoBox.html('<a href="#portfolio" id="closeProjectButtonLink"><div class="closeProjectButton">X</div></a><h3>EventCupid</h3><p>Centred around the Google Maps and Skidde API, this app finds upcoming events around a central location between the user and their chosen partner. Users are able to select a date range for the available events and then follow a link to purchase tickets for that event.</p><a href="#"><div class="projectButton">View Code</div></a><a href="#"><div class="projectButton" id="viewCodeButton">View Project</div></a>');
+    var $closeProjectButton = $('.closeProjectButton');
+    $closeProjectButton.on('click', hideProject);
+  }
+
+  function showProjectFour() {
+    $shadeBox.show();
+    $projectInfoBox.show();
+    $projectInfoBox.html('<a href="#portfolio" id="closeProjectButtonLink"><div class="closeProjectButton">X</div></a><h3>Snake vs Snake</h3><p>A game based on the popular mobile game Snake. Served as a great introduction to breaking down a complicated problem into smaller, more manageable tasks.</p><a href="#"><div class="projectButton">View Code</div></a><a href="#"><div class="projectButton" id="viewCodeButton">View Project</div></a>');
     var $closeProjectButton = $('.closeProjectButton');
     $closeProjectButton.on('click', hideProject);
   }
