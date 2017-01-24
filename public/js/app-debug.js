@@ -14,7 +14,6 @@ $(function () {
 
   var $shadeBox = $('.shadeBox');
   var $projectInfoBox = $('.projectInfoBox');
-  var $closeProjectButton = $('.closeProjectButton');
   var $projectCardOne = $('#projectCardOne');
   var $projectCardTwo = $('#projectCardTwo');
   var $projectCardThree = $('#projectCardThree');
@@ -24,11 +23,15 @@ $(function () {
   $projectCardTwo.on('click', showProject);
   $projectCardThree.on('click', showProject);
   $projectCardFour.on('click', showProject);
-  $closeProjectButton.on('click', hideProject);
+
+  var projectHtmlOne = '<a href="#portfolio" id="closeProjectButtonLink"><div class="closeProjectButton">X</div></a><h3>Talkr</h3><p>My final project during the course, I decided to create a chatroom based instant messenger. Users can have private and public with each other or even just with themselves. With a Ruby-on-Rails api and an angular based front end it was my most complex project so far with Action Cable handling the instant part of Instant messenger.</p><a href="#"><div class="projectButton">View Code</div></a><a href="#"><div class="projectButton" id="viewCodeButton">View Project</div></a>';
 
   function showProject() {
     $shadeBox.show();
     $projectInfoBox.show();
+    $projectInfoBox.html(projectHtmlOne);
+    var $closeProjectButton = $('.closeProjectButton');
+    $closeProjectButton.on('click', hideProject);
   }
 
   function hideProject() {
