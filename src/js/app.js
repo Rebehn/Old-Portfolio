@@ -49,7 +49,7 @@ $(() => {
   function showProjectFour() {
     $shadeBox.show();
     $projectInfoBox.show();
-    $projectInfoBox.html('<a href="#portfolio" id="closeProjectButtonLink"><div class="closeProjectButton">X</div></a><h3>Snake vs Snake</h3><p>A game based on the popular mobile game Snake. Served as a great introduction to breaking down a complicated problem into smaller, more manageable tasks.</p><a href="#"><div class="projectButton">View Code</div></a><a href="#"><div class="projectButton" id="viewCodeButton">View Project</div></a>');
+    $projectInfoBox.html('<a href="#portfolio" id="closeProjectButtonLink"><div class="closeProjectButton">X</div></a><h3>Snake vs Snake</h3><p>A game based on the popular mobile game Snake. Served as a great introduction to breaking down a complicated problem into smaller, more manageable tasks.</p><ul><li>Arrowkeys to move in singleplayer or for player one in two player.</li><li>WASD keys to move the second player in two player.</li><li>P key pauses.</li><li>[ key resumes.</li><li>R key restarts after game over.</li><li>M key mutes the background music.</li><li>N key unmutes muted music.</li></ul><img src="public/images/snake-vs-snake.png" alt="Snake vs Snake Screenshot"><a href="https://snake-vs-snake.herokuapp.com/" target="_blank"><div class="projectButton">View Code</div></a><a href="https://github.com/Rebehn/WDI-Project-1" target="_blank"><div class="projectButton" id="viewCodeButton">View Project</div></a>');
     const $closeProjectButton = $('.closeProjectButton');
     $closeProjectButton.on('click', hideProject);
   }
